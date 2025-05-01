@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function showMotivation() {
     const messages = [
         "Həmişə özünə inan!",
@@ -17,6 +18,12 @@ function showMotivation() {
 function addItem(inputId, listId) {
     const input = document.getElementById(inputId);
     const list = document.getElementById(listId);
+=======
+function addItem(inputId, listId) {
+    const input = document.getElementById(inputId);
+    const list = document.getElementById(listId);
+
+>>>>>>> 7c17aadcb1868b2a5f45e105248ee7c3c6f1104d
     if (input.value.trim() !== "") {
         const li = document.createElement("li");
         li.textContent = input.value;
@@ -24,6 +31,7 @@ function addItem(inputId, listId) {
         input.value = "";
     }
 }
+<<<<<<< HEAD
 const buttons = document.querySelectorAll('button');
 buttons.forEach(button => {
     button.addEventListener("mouseenter", () => {
@@ -63,6 +71,9 @@ function toggleCV() {
     const cvContainer = document.querySelector('.cv-container');
     cvContainer.style.display = (cvContainer.style.display === "none" || cvContainer.style.display === "") ? "flex" : "none";
 }
+=======
+
+>>>>>>> 7c17aadcb1868b2a5f45e105248ee7c3c6f1104d
 function toggleSection(listId) {
     const section = document.getElementById(listId);
     section.style.display = (section.style.display === "none" || section.style.display === "") ? "block" : "none";
