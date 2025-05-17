@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cəbiyeva Rahidə - CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cv-container">
+        <div class="sidebar">
+            <img src="C:\Users\PC\Desktop\1f23081c-ba41-40a6-ae77-87e30f22b107.jpg" alt="Cəbiyeva Rahidə">
+            <h2>Cəbiyeva Rahidə</h2>
+            <p><strong>Doğum Tarixi:</strong> 31.08.2007</p>
+            <p><strong>Əlaqə:</strong> 099 864 04 54</p>
+            <p><strong>Email:</strong> <a href="mailto:cebiyevarahide31@gmail.com">cebiyevarahide31@gmail.com</a></p>
+            <p><strong>Ünvan:</strong> Bakı, Nizami rayonu, Şirin Mirzəyev 180</p>
+            <div class="languages">
+                <h3>Dillər</h3>
+                <ul>
+                    <li>🇬🇧 English - Pre-intermediate</li>
+                    <li>🇹🇷 Türk - Çox yaxşı</li>
+                    <li>🇦🇿 Azərbaycan - Çox yaxşı</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="dynamic-section">
+                <h2 onclick="toggleSection('edu-list')">Təhsil ⯆</h2>
+                <ul id="edu-list">
+                    <li>Azərbaycan Texniki Universiteti - İnformasiya Təhlükəsizliyi (1-ci kurs, 2024-Davam edir)</li>
+                </ul>
+                <input type="text" id="edu-input" placeholder="Yeni təhsil məlumatı">
+                <button onclick="addItem('edu-input', 'edu-list')">Əlavə et</button>
+            </div>
+
+            <div class="dynamic-section">
+                <h2 onclick="toggleSection('exp-list')">İş Təcrübəsi ⯆</h2>
+                <ul id="exp-list">
+                    <li>Praktikaya gediləcək</li>
+                </ul>
+                <input type="text" id="exp-input" placeholder="Yeni iş təcrübəsi">
+                <button onclick="addItem('exp-input', 'exp-list')">Əlavə et</button>
+            </div>
+
+            <div class="dynamic-section">
+                <h2 onclick="toggleSection('skill-list')">Bacarıqlar ⯆</h2>
+                <ul id="skill-list">
+                    <li>Python</li>
+                    <li>HTML, CSS</li>
+                </ul>
+                <input type="text" id="skill-input" placeholder="Yeni bacarıq">
+                <button onclick="addItem('skill-input', 'skill-list')">Əlavə et</button>
+            </div>
+
+            <h2>Haqqımda</h2>
+            <p>Məsuliyyətli, öyrənməyə açıq və texnologiyaya böyük maraq göstərən bir tələbəyəm. İT sahəsində biliklərimi daima inkişaf etdirməyə çalışıram. Komanda ilə işləməkdə çevik, yeni bilikləri tez mənimsəyən və problemlərin həllinə analitik yanaşan biriyəm. Gələcək karyeramda informasiya təhlükəsizliyi sahəsində peşəkar olmaq əsas məqsədimdir.</p>
+
+            <h2>Şəxsi Keyfiyyətlər</h2>
+            <ul>
+                <li>Yüksək məsuliyyət hissi və özünənəzarət</li>
+                <li>Sürətli öyrənmə və tətbiqetmə bacarığı</li>
+                <li>Komanda və fərdi şəkildə effektiv işləmək qabiliyyəti</li>
+                <li>Analitik və tənqidi düşüncə</li>
+                <li>Güclü təşkilati və planlaşdırma bacarığı</li>
+                <li>Yeniliklərə açıq və inkişaf yönümlü düşüncə</li>
+                <li>Güclü ünsiyyət və təqdimat bacarıqları</li>
+            </ul>
+
+            <h2>Hobbi və Maraqlar</h2>
+            <p>Musiqi dinləmək, Kitab oxumaq, İnkişaf üçün əlavə biliklər əldə etməyə çalışmaq</p>
+        </div>
+    </div>
+<button onclick="showMotivation()">Motivasiya Mesajı</button>
+<button onclick="shuffleQualities()">Keyfiyyətləri Qarışdır</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
